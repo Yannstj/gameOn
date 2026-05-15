@@ -108,5 +108,10 @@ function validate() {
     checkboxField.removeAttribute("data-error-visible");
   }
 
-  return isValid;
+  if (isValid) {
+    document.querySelector(".modal-body").style.display = "none";
+    document.querySelector(".modal-confirm").style.display = "block";
+  }
+
+  return false;
 }
