@@ -18,6 +18,9 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
+  document.querySelector(".modal-body").style.display = "block";
+  document.querySelector(".modal-confirm").style.display = "none";
+  document.querySelector("form[name='reserve']").reset();
 }
 
 //close modal
