@@ -111,7 +111,7 @@ function validate() {
 
   if (isValid) {
     document.querySelector(".modal-body").style.display = "none";
-    document.querySelector(".modal-confirm").style.display = "block";
+    document.querySelector(".modal-confirm").style.display = "flex";
   }
 
   return false;

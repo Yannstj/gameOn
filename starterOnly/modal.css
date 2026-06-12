@@ -188,6 +188,31 @@ main {
   margin: 15px auto;
 }
 
+.modal-confirm {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 580px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.modal-confirm__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.modal-confirm__subtitle {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.modal-confirm__close {
+  margin-top: 40px;
+}
+
 label {
   font-family: var(--font-default);
   font-size: 17px;
