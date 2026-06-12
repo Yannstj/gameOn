@@ -18,7 +18,7 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // Réinitialise le formulaire et masque la confirmation pour repartir d'un état vierge à chaque ouverture
 function launchModal() {
   modalbg.style.display = "block";
-  document.querySelector(".modal-body").style.display = "block";
+  document.querySelector(".modal-body").style.visibility = "visible";
   document.querySelector(".modal-confirm").style.display = "none";
   document.querySelector("form[name='reserve']").reset();
 }
@@ -110,7 +110,7 @@ function validate() {
   }
 
   if (isValid) {
-    document.querySelector(".modal-body").style.display = "none";
+    document.querySelector(".modal-body").style.visibility = "hidden";
     document.querySelector(".modal-confirm").style.display = "flex";
   }
 

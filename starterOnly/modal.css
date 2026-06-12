@@ -190,12 +190,14 @@ main {
 
 .modal-confirm {
   display: none;
+  position: absolute;
+  inset: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 580px;
   padding: 60px 20px;
   text-align: center;
+  background: #232323;
 }
 
 .modal-confirm__title {
