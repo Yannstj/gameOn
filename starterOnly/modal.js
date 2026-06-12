@@ -28,6 +28,10 @@ closeBtn.addEventListener("click", () => {
   modalbg.style.display = "none";
 });
 
+document.querySelector(".modal-confirm__close").addEventListener("click", () => {
+  modalbg.style.display = "none";
+});
+
 // Affiche ou efface une erreur sur le wrapper .formData du champ.
 // Passer null en message supprime l'erreur.
 function setError(input, message) {

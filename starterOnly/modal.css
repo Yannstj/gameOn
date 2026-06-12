@@ -192,6 +192,7 @@ main {
   display: none;
   position: absolute;
   inset: 0;
+  z-index: 10;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -205,14 +206,11 @@ main {
   font-weight: bold;
 }
 
-.modal-confirm__subtitle {
-  margin-top: 20px;
-  font-weight: normal;
-  font-size: 1rem;
-}
-
 .modal-confirm__close {
-  margin-top: 40px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 label {
